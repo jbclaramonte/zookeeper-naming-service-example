@@ -48,6 +48,7 @@ public class PriceCalculatorRest {
             logger.debug("version du service: {}", serviceInstance.getPayload());
 
             String serviceUrl = serviceInstance.buildUriSpec() + "/ttc?ht={ht}";
+            logger.debug("appel de l'url: {}", serviceUrl);
             Map<String,Double> params = new HashMap<String, Double>();
             params.put("ht", totalHT);
             totalTTC = restTemplate.getForObject(serviceUrl, Double.class, params);

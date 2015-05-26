@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/taxeapi")
-public class AdditionRest {
+@RequestMapping(value = "/taxapi")
+public class TaxRest {
 
     private static final double TVA = 0.2;
 
